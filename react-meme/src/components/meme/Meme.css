@@ -1,0 +1,28 @@
+.meme-image {
+    position: relative;
+}
+
+.meme-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.meme-image p {
+    background-color: rgba(0,0,0, 0.3);
+    color: #fff;
+    padding: 1em 4em;
+    font-size: 1em;
+}
+
+.meme-image .top-title {
+    position: absolute;
+    top: 2em;
+    right: 0;
+}
+
+.meme-image .bottom-title {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+}
