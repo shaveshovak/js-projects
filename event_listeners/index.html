@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Exercise</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/styles.css" />
+    </head>
+
+  <body>
+    <div class="block">
+        <button onclick="redirectToBootstrap()">Go to Bootstrap</button>
+    </div>
+
+    <div class="block">
+        <button class="not-redirect">Not redirect</button>
+        <button class="redirect">Redirect</button>
+    </div>
+
+    <div class="block">
+        <form onsubmit="return validateForm()">
+          <input type="text" name="name" id="name" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

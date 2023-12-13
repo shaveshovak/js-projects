@@ -100,7 +100,7 @@ console.log(physicistMen);
 // Expected output:
 // ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Marie Curie", "Johannes Kepler", "Nicolaus Copernicus", "Max Planck", "Katherine Blodgett", "Ada Lovelace", "Sarah E. Goode", …]
 
-const inventorNames = inventors.map(inventor => {
+const inventorNames = inventors.map(inventor => {4
   return `${inventor.first} ${inventor.last}`;
 });
 
