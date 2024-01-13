@@ -53,28 +53,10 @@ class BookList {
         }
     }
 
-    // Additional useful methods
-    // Additional methods like getBookByTitle and getBooksByAuthor provide more functionality to interact with the book list.
-    getBookByTitle(title) {
-        return this.books.find(book => book.title === title);
-    }
-
-    getBooksByAuthor(author) {
-        return this.books.filter(book => book.author === author);
-    }
-
-    displayBooks() {
-        const bookListDiv = document.getElementById('bookList');
-        bookListDiv.innerHTML = ''; // Clear current content
-
-        this.books.forEach(book => {
-            const bookInfo = document.createElement('div');
-            bookInfo.textContent = `${book.title} by ${book.author} - ${book.read ? 'Read' : 'Not Read Yet'}`;
-            bookListDiv.appendChild(bookInfo);
-        });
-    }
+//     getBookByTitle(title) {
+//         return this.books.find(book => book.title === title);
+//     }
 }
-
 
 let myBookList = new BookList();
 
@@ -86,13 +68,15 @@ myBookList.add(book1);
 myBookList.add(book2);
 myBookList.add(book3);
 
-console.log("Current Book:", myBookList.currentBook.title);
-myBookList.finishCurrentBook();
-console.log("Last Book Read:", myBookList.lastBook.title);
-console.log("Next Book:", myBookList.nextBook.title);
+// console.log(myBookList.books);
+// console.log(myBookList.currentBook.title)
 
-myBookList.displayBooks(); // Display books on the webpage
-
-// To update the list on the webpage after finishing a book
 myBookList.finishCurrentBook();
-myBookList.displayBooks(); // Re-display books with updated status
+
+// console.log(myBookList.books);
+
+myBookList.finishCurrentBook();
+console.log(myBookList.books);
+
+
+// myBookList.displayBooks(); // Re-display books with updated status
